@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a HTML5 Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid border pt-2 m-auto 100px justify-content-center">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="alert alert-secondary" role="alert">
+                <h2>Payment Form Example</h2>
+            </div>
+            <div class="alert alert-danger" role="alert">
+                <h5>Some fields are missing</h5>
+            </div>
+            <div class="col-md-6 position-relative">
+                <label for="validationTooltip01" class="form-label">Card #</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="XXXXXXXXXXXXXXXX" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip02" class="form-label">CVC #</label>
+                <input type="text" class="form-control" id="validationTooltip02" value="0000" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="col-md-3 position-relative">
+                <label for="validationTooltip03" class="form-label">Amount</label>
+                <div class="d-flex"><span>$</span><input type="text" class="form-control" id="validationTooltip03"
+                        value="Amount" required></div>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="col-md-8 position-relative">
+                <label for="validationTooltip04" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationTooltip04" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <label for="validationTooltip05" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationTooltip05" required>
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-8 position-relative">
+                <label for="validationTooltip06" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationTooltip06" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-2 position-relative">
+                <label for="validationTooltip07" class="form-label">State</label>
+                <select class="form-select" id="validationTooltip07" required>
+                    <option selected disabled value="" placeholder="Pick a state">Pick a state</option>
+                    <option>AL</option>
+                    <option>AK</option>
+                    <option>AZ</option>
+                    <option>AR</option>
+                    <option>CA</option>
+                    <option>CO</option>
+                    <option>CT</option>
+                    <option>DE</option>
+                    <option>FL</option>
+                    <option>GA</option>
+                    <option>HI</option>
+                    <option>ID</option>
+                    <option>IL</option>
+                    <option>IN</option>
+                    <option>IA</option>
+                    <option>KS</option>
+                    <option>KY</option>
+                    <option>LA</option>
+                    <option>ME</option>
+                    <option>MD</option>
+                    <option>MA</option>
+                    <option>MI</option>
+                    <option>MN</option>
+                    <option>MS</option>
+                    <option>MO</option>
+                    <option>MT</option>
+                    <option>NE</option>
+                    <option>NV</option>
+                    <option>NH</option>
+                    <option>NJ</option>
+                    <option>NM</option>
+                    <option>NY</option>
+                    <option>NC</option>
+                    <option>ND</option>
+                    <option>OH</option>
+                    <option>OK</option>
+                    <option>OR</option>
+                    <option>PA</option>
+                    <option>RI</option>
+                    <option>SC</option>
+                    <option>SD</option>
+                    <option>TN</option>
+                    <option>TX</option>
+                    <option>UT</option>
+                    <option>VT</option>
+                    <option>VA</option>
+                    <option>WA</option>
+                    <option>WV</option>
+                    <option>WI</option>
+                    <option>WY</option>
+                </select>
+                <div class="invalid-feedback">Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-2 position-relative">
+                <label for="validationTooltip08" class="form-label">Postal Code</label>
+                <input type="text" class="form-control" id="validationTooltip08" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid zip.
+                </div>
+            </div>
+
+            <div class="col-md-5 justify-space-between">
+                <div class="d-flex mb-3"><span>We accept:</span></div>
+                <div class="col-md-5 d-flex justify-content-between ps-2 pe-2 bg-secondary text-light">
+                    <div class="form-check form-check-d-flex">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="mastercard"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><i
+                                class="fa-brands fa-cc-mastercard"></i></label>
+                    </div>
+                    <div class="form-check form-check-d-flex">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="visa"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                    </div>
+                    <div class="form-check form-check-d-flex">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="diners-club"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio1"><i
+                                class="fa-brands fa-cc-diners-club"></i></label>
+                    </div>
+                    <div class="form-check form-check-d-flex">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="amex"
+                            value="option4">
+                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-amex"></i></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 ml-auto">
+                <label for="validationTooltip09" class="form-label">Message</label>
+                <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="validationTooltip09" class="form-label fs-6">Add any notes here.</label>
+            </div>
+
+            <div class="alert alert-secondary" role="alert">
+                <h2 class="invisible">P</h2>
+            </div>
+    </div>
+
+    </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c966b8ec3f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
